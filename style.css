@@ -1,0 +1,312 @@
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.head {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: rgb(255, 255, 255);
+}
+
+body {
+    display: flex;
+    margin: 0px;
+}
+
+.nav{
+    padding-left:5px;
+    width: 15%;
+    background-color: rgb(255, 172, 64);
+    padding: 10px;
+    padding-bottom: 0px !important;
+}
+
+.ngrid{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    background-color: rgb(255, 172, 64);
+    padding: 10px;
+}
+
+
+.hdr {
+    gap: 10px !important;
+    font-size: 25px;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    user-select: none;
+
+
+}
+
+.item:hover {
+    position: relative;
+    top: -3px;
+    right: -3px;
+    color: #ffffff;
+}
+
+.item:active {
+    position: relative;
+    top: 0px;
+    right: 0px;
+}
+
+.icon {
+    height: 25px;
+    width: 25px;
+}
+
+
+
+.content{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgb(233, 232, 232);
+    padding-top: 20px;
+}
+
+.right {
+    width:30%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:start;
+}
+
+
+
+.search, .greeting{
+    width: 50%;
+    
+}
+
+.buttons {
+    display: flex;
+    height: fit-content;
+    gap: 20px;
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-left: 50px;
+}
+
+.button {
+    width: 40%;
+    padding-top:  10px !important;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 15px;
+    border-color: rgb(255, 172, 64);;
+    padding-bottom: 10px;
+    background-color: rgb(255, 172, 64);
+    color: white;
+    box-shadow:inset 0px 1px 0px 0px rgb(255, 172, 64);
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+
+.button:active {
+    position: relative;
+    top: 3px;
+}
+
+form {
+    background-color: rgb(233, 232, 232);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 15px;
+}
+
+.sbutton {
+    background-image: url(glass.svg);
+    background-color: rgb(233, 232, 232);
+    border: none;
+}
+
+
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    margin-left: 25px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    width: 95%;
+}
+
+
+.card{
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    border-radius: 20px;
+    box-shadow: 5px 8px #888888;
+
+}
+
+.showcase {
+    width: 100%;
+}
+
+.title {
+    margin-left: 10px;
+}
+
+#text {
+    color: rgb(87, 85, 85);
+    margin-left: 15px;
+}
+
+.announcements, .trending{
+    width: 100%;
+    
+}
+
+.anncard, .trendcard{
+    width: 90%;
+    height: 80%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    box-shadow: 5px 8px #888888
+
+
+}
+
+.search {
+    width: 90%;
+    position: relative;
+    display: flex;
+    text-align: center;
+}
+
+.seachTerm {
+    background-color: rgb(233, 232, 232);;
+}
+  
+.name { 
+    display: flex;
+    flex-direction: row-reverse;
+    padding-left: 50px;
+    margin-right: 15px;
+    gap: 25px;
+}
+
+.actualname {
+    display: flex;
+    align-items:flex-start;
+    justify-content: flex-start;
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.lupka {
+    height: 15px;
+    width: 15px;
+    background-color:rgb(233, 232, 232);
+}
+
+input{
+    background-color: rgb(233, 232, 232);
+    width: 100%;
+    border: none;
+}
+
+.setting, .notification {
+    width: 2rem;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.setting:hover, .notification:hover {
+    position: relative;
+    top: -3px;
+    right: -3px;
+}
+
+.setting:active, .notification:active {
+    position: relative;
+    top: 0px;
+    right: 0px;
+}
+
+ul {
+    padding: 20px;
+    list-style-type: none;
+    padding-bottom: 30px;
+}
+
+
+
+
+h1 {
+    font-size: 15px;
+}
+
+.anntext {
+    font-size: 11px;
+    color: #888888;
+    
+}
+
+.trend {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.handle {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3px;
+}
+
+.avatar {
+    display: flex;
+    height: 20%;
+    width: 20%;
+}
+
+.at {
+    color: #444444;
+    padding: 5px;
+}
+
+.post {
+    color: #444444;
+    font-size: 12px;
+    padding-left: 5px;
+}
